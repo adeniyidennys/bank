@@ -65,12 +65,51 @@ if(isset($_POST['submit'])){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Admin Signup</title>
+
+<style>
+
+.form{
+	
+		border:solid 4px grey;
+		border-radius: 15px;
+		width:470px;
+		margin:auto;
+		top:50%;
+		margin-bottom:20px;
+	
+	}
+
+input{
+	
+		padding:10px;
+		font-size:16px;
+		border:2px solid grey;
+		border-radius:5px;
+		margin-bottom:30px;
+		width:450px
+	
+		position:relative;
+		display:block;
+		margin:auto;
+		top:50%;
+		margin-top:25px;
+	
+	
+		
+	}
+
+
+
+
+</style>
+
+
 </head>
 
-<body>
+<body style="background-color:#999">
 
 
-<form action="" method="post">
+<form action="" method="post" class="form">
 
 <?php if(isset($error['name'])){
 	  echo "<p style='color:red'>".$error['name']."</p>";
